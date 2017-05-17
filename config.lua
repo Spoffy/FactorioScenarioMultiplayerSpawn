@@ -9,12 +9,12 @@
 -- Messages
 --------------------------------------------------------------------------------
 
-WELCOME_MSG = "[INSERT SERVER OWNER MSG HERE!]"
-GAME_MODE_MSG = "In the current game mode, a satellite must be launched from an existing far away rocket silo to win!"
-MODULES_ENABLED = "Mods Enabled: Separate Spawns, RSO, Long-Reach, Autofill, Undecorator, Player List"
+WELCOME_MSG = "Welcome to LLA's Factorio Server, hosted by Spoffy! Find LLA's discord at: https://discord.gg/EKF872n"
+GAME_MODE_MSG = [[In the current game mode, there is no 'win' condition - Compete/cooperate to become the biggest empire, or play the game as YOU see fit!]]
+MODULES_ENABLED = "Mods Enabled: Separate Spawns, RSO, Undecorator, Player List"
 
-WELCOME_MSG_TITLE = "[INSERT SERVER OWNER MSG HERE!]"
-WELCOME_MSG1 = "Rules: Be polite. Ask before changing other players's stuff. Have fun!"
+WELCOME_MSG_TITLE = "Welcome to LLA's Factorio Server, hosted by Spoffy!"
+WELCOME_MSG1 = "Rules: Don't be a dick. Don't tamper with other people's machinery without permission. Have fun!"
 WELCOME_MSG2 = "This server is running a custom scenario that changes spawn locations."
 
 OTHER_MSG1 = "Latest updates in this scenario version (0.4.1):"
@@ -23,7 +23,7 @@ OTHER_MSG2 = "Gravestones are back in."
 WELCOME_MSG3 = "Due to the way this scenario works, it may take some time for the land"
 WELCOME_MSG4 = "around your new spawn area to generate..."
 WELCOME_MSG5 = "Please wait for 10-20 seconds when you select your first spawn."
-WELCOME_MSG6 = "Contact: SteamID:Oarc | oarcinae@gmail.com"
+WELCOME_MSG6 = "Contact: Spoffy#2603 on Discord - https://discord.gg/EKF872n"
 
 SPAWN_MSG1 = "Current Spawn Mode: HARDCORE WILDERNESS (BETA)"
 SPAWN_MSG2 = "In this mode, there is no default spawn. Everyone starts in the wild!"
@@ -31,7 +31,7 @@ SPAWN_MSG3 = "Resources are spread out far apart but are quite rich."
 
 -- These are my specific welcome messages that get used only if I am the user
 -- that creates the game.
-SERVER_OWNER_IS_OARC = true -- This should be false for you, it's just a convenience for me.
+SERVER_OWNER_IS_OARC = false -- This should be false for you, it's just a convenience for me.
 WELCOME_MSG_OARC = "Welcome to Oarc's official server! Join the discord here: discord.gg/TPYxRrS"
 WELCOME_MSG_TITLE_OARC = "Welcome to Oarc's Server - Happy 0.15.X!"
 
@@ -42,8 +42,8 @@ WELCOME_MSG_TITLE_OARC = "Welcome to Oarc's Server - Happy 0.15.X!"
 -- will probably break the frontier rocket silo mode
 --------------------------------------------------------------------------------
 
--- Frontier style rocket silo mode
-FRONTIER_ROCKET_SILO_MODE = true
+-- Frontier style rocket silo mode - Game ends when a rocket is launched
+FRONTIER_ROCKET_SILO_MODE = false
 
 -- Separate spawns
 -- This is the core of the mod. Probably not a good idea to disable it.
@@ -60,11 +60,11 @@ ENABLE_UNDECORATOR = true
 -- Enable Tags
 ENABLE_TAGS = true
 
--- Enable Long Reach
-ENABLE_LONGREACH = true
+-- Enable Long Reach - Extended build and drop ranges
+ENABLE_LONGREACH = false
 
 -- Enable Autofill
-ENABLE_AUTOFILL = true
+ENABLE_AUTOFILL = false
 
 -- Enable Playerlist
 ENABLE_PLAYER_LIST = true
