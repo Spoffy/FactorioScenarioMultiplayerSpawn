@@ -192,7 +192,7 @@ function InitSpawnGlobalsAndForces()
     game.create_force(MAIN_FORCE)
     game.forces[MAIN_FORCE].set_spawn_position(game.forces["player"].get_spawn_position(GAME_SURFACE_NAME), GAME_SURFACE_NAME)
     SetCeaseFireBetweenAllForces()
-    SetFriendlyBetweenAllForces()
+    --SetFriendlyBetweenAllForces()
     -- AntiGriefing(game.forces[MAIN_FORCE])
 end
 
@@ -268,7 +268,7 @@ function CreatePlayerCustomForce(player)
         newForce = game.create_force(player.name)
         player.force = newForce
         SetCeaseFireBetweenAllForces()
-        SetFriendlyBetweenAllForces() 
+        --SetFriendlyBetweenAllForces() 
         SendBroadcastMsg(player.name.." has started their own team!")     
     else
         player.force = MAIN_FORCE
