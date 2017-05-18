@@ -1,6 +1,6 @@
 debug_enabled = false
 
-region_size = 10    -- alternative mean to control how further away resources would be, default - 256 tiles or 8 chunks
+region_size = 7    -- alternative mean to control how further away resources would be, default - 256 tiles or 8 chunks
 				    -- each region is region_size*region_size chunks
 				    -- each chunk is 32*32 tiles
 
@@ -8,7 +8,7 @@ use_donut_shapes = false		-- setting this to false will remove donuts from possi
 
 starting_area_size = 0         	-- starting area in regions, safe from random nonsense
 
-absolute_resource_chance = 0.50 -- chance to spawn an resource in a region
+absolute_resource_chance = 0.75 -- chance to spawn an resource in a region
 starting_richness_mult = 1		-- multiply starting area richness for resources
 global_richness_mult = 1		-- multiply richness for all resources except starting area
 global_size_mult = 1			-- multiply size for all ores, doesn't affect starting area
@@ -16,7 +16,7 @@ global_size_mult = 1			-- multiply size for all ores, doesn't affect starting ar
 absolute_enemy_chance = 3	      -- chance to spawn enemies per sector (can be more then one base if spawned)
 enemy_base_size_multiplier = 1  -- all base sizes will be multiplied by this - larger number means bigger bases
 
-multi_resource_active = false			-- global switch for multi resource chances
+multi_resource_active = true			-- global switch for multi resource chances
 multi_resource_richness_factor = 0.60 	-- any additional resource is multiplied by this value times resources-1
 multi_resource_size_factor = 0.90
 multi_resource_chance_diminish = 0.6	-- diminishing effect factor on multi_resource_chance
