@@ -278,6 +278,13 @@ script.on_event(defines.events.on_research_finished, function(event)
     end
 end)
 
+----------------------------------------
+-- On Force Created
+-- Set parameters for newly created force
+----------------------------------------
+script.on_event(defines.events.on_force_created, function(event)
+    ResearchAllRedTech(event.force)
+end)
 
 ----------------------------------------
 -- Other?

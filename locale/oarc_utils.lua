@@ -113,6 +113,27 @@ function SendBroadcastMsg(msg)
     end
 end
 
+--Research all red technologies
+function TechnologyRequiresOnlyRed(technology)
+    local hasRed = false
+    for i,ingredient in ipairs(technology.research_unit_ingredients) do
+        if (ingredient.name == "science-pack-1") then
+            hasRed = true
+        else
+            return false
+        end
+    end
+    return hasRed
+end   
+
+function ResearchAllRedTech(force)
+    for name,technology in pairs(force.technologies) do
+      if (TechnologyRequiresOnlyRed(technology)) then
+        technology.researched = true
+      end
+    end
+end
+
 -- Special case for ensuring that if I create the server, my messages are
 -- used instead of the generic insert msg warning.
 function SetServerWelcomeMessages()
